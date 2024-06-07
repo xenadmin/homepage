@@ -445,7 +445,7 @@ function Home({ initialSettings }) {
           </div>
 
           <div id="version" className="flex mt-4 w-full justify-end">
-            {!settings.hideVersion && <Version />}
+            {!settings.hideVersion && <Version disableUpdateCheck={settings.disableUpdateCheck} />}
           </div>
         </div>
       </div>
